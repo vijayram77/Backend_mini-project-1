@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-zinc-900 w-full h-screen">
+        <a class="text-blue-500 font-semibold text-xl py-2 mx-[5vw] inline-block mt-[5vh] rounded-md" href="/login">Already have an account? <span class="text-zinc-100">Login</span></a>
+        <form method="post" action="/register">
+            <h1 class="text-3xl font-semibold mx-[5vw] mt-[5vh] text-zinc-200 tracking-tighter pb-6">Create Account</h1>
+            <div class="px-[5vw] py-[5vh] flex gap-4 flex-wrap ">
+                <input type="text" required name="name" class="px-4 outline-none py-2 text-zinc-300  rounded-md bg-transparent border border-zinc-600" placeholder="name">
+                <input type="text" required name="username" class="px-4 outline-none py-2 text-zinc-300  rounded-md bg-transparent border border-zinc-600" placeholder="username">
+                <input type="text" required name="age" class="px-4 py-2 outline-none text-zinc-300  rounded-md bg-transparent border border-zinc-600" placeholder="age">
+                <input type="email" required name="email" class="px-4 py-2 outline-none text-zinc-300  rounded-md bg-transparent border border-zinc-600" placeholder="email">
+                <input type="password" required name="password" class="px-4 outline-none py-2 text-zinc-300  rounded-md bg-transparent border border-zinc-600" placeholder="password">
+                <input type="submit" value="Create User" class="px-4 py-2 text-zinc-100 font-semibold mx-2 rounded-md bg-blue-600 ">
+            </div>
+        </form>
+        <a class="text-zinc-500 font-semibold text-[16px] py-2 mx-[5vw] inline-block mt-[5vh] rounded-md" href="/feed">Wanna Browse the feed? <span class="text-blue-500">click here</span></a>
+
+    </div>
+</body>
+</html>
